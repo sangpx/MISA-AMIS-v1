@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: MISA Fonts Regular;
+    font-size: 13px;
+    font-weight: 400;
+    color: #111;
+}
+
+@font-face {
+    font-family: MISA Fonts Regular;
+    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+a {
+    text-decoration: none;
+}
+
+@import url(../css/base/icon.css);

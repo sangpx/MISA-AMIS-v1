@@ -1,0 +1,104 @@
+.ms-btn-30 {
+    border-radius: 30px;
+}
+
+.btn-bg-white {
+    background-color: white;
+}
+
+.btn-bg-gray {
+    background: #eceef1;
+}
+
+.ms-radius-true {
+    border-radius: 30px 0 0 30px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.btn-hover-gray:hover {
+    background-color: #b1b2b352;
+}
+
+.ms-btn-pad-16-8 {
+    padding: 8px 16px 8px 16px;
+}
+
+.align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-btn-text {
+    font-weight: 600;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    transition: all .25s ease;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.pr-4 {
+    padding-right: 4px!important;
+}
+
+.border-2 {
+    border: 2px solid #3b3c3f;
+}
+
+.ms-dropdown-style-default {
+    padding: 8px 16px 8px 20px;
+    height: 36px;
+}
+
+.ms-button-primary {
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #2ca01c;
+}
+
+.color-white {
+    color: white;
+}
+
+.ms-padding-is-single-false-size-default {
+    width: 46px;
+}
+
+.ms-con-dropdown-radius-false-true {
+    border-radius: 0 30px 30px 0;
+}
+
+.ms-padding-is-single-false-size-default {
+    height: 36px;
+    padding: 8px 10px;
+}
+
+.line {
+    left: -7px;
+    height: 20px;
+    top: -1px;
+    position: relative;
+    border: 1px solid transparent;
+    border-left-color: #fff;
+}
+
+.btn-hover-green:hover {
+    background-color: rgba(22, 199, 16, 0.781);
+}
+
+.ms-button {
+    transition: all .2s ease;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    box-sizing: border-box;
+    background: 0 0;
+    overflow: visible;
+}

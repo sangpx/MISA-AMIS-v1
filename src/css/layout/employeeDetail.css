@@ -1,0 +1,728 @@
+.ms-popup-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(51, 51, 51, 0.199);
+    z-index: 100;
+}
+
+.ms-loading {
+    width: 900px;
+    height: 625px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    background-color: rgba(51, 51, 51, 0.171);
+}
+
+.ms-popup {
+    width: 900px;
+    height: 625px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    background-color: #fff;
+}
+
+.ms-popup-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px 5px;
+    position: relative;
+}
+
+.ms-popup--title {
+    width: 100%;
+    padding: 20px 32px;
+    padding-right: 12px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.header-popup .title-popup {
+    font-size: 24px;
+    color: #111;
+    font-weight: 700;
+}
+
+.px-6 {
+    padding-left: 1.5rem!important;
+    padding-right: 1.5rem!important;
+}
+
+.con-ms-checkbox {
+    justify-content: flex-start;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ms-popup-close {
+    display: flex;
+    padding: 12px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.mr-6-px {
+    margin-right: 6px;
+}
+
+
+/* .ms-has-tooltip::after {
+    position: relative;
+    top: 25px;
+    content: 'Đóng';
+} */
+
+.ms-popup-close .ms-has-tooltip:first-child:hover::after {
+    content: 'Trợ giúp';
+    position: relative;
+    top: 30px;
+    min-width: max-content;
+    display: flex;
+    padding: 3px;
+    background-color: #babec5;
+}
+
+.ms-popup-close .ms-has-tooltip:last-child:hover::after {
+    content: 'Đóng (ESC)';
+    position: relative;
+    top: 30px;
+    min-width: max-content;
+    display: flex;
+    padding: 5px;
+    background-color: #babec5;
+}
+
+.popup-h-73 {
+    height: calc(100% - 73px);
+}
+
+.ms-popup--content {
+    transition: all .23s ease .1s;
+    flex-direction: column;
+    display: flex;
+    overflow: auto;
+    overflow-y: visible;
+    padding: 0 32px 20px;
+}
+
+.pd-b-12 {
+    padding-bottom: 12px;
+}
+
+.w-1\/2 {
+    width: 50%!important;
+}
+
+.w-1\/4 {
+    width: 25%!important;
+}
+
+.p-r-26 {
+    padding-right: 26px;
+}
+
+.w-2\/5 {
+    width: 40%!important;
+}
+
+.p-t-5 {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+}
+
+.w-3\/5 {
+    width: 60%!important;
+}
+
+.label-input {
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: var(--control-label-bottom-space);
+    color: #111;
+}
+
+.row-input {
+    padding-bottom: 12px;
+}
+
+.p-r-6 {
+    padding-right: 6px;
+}
+
+.ms-combo {
+    position: relative;
+    width: 100%;
+}
+
+.w-full {
+    width: 100%!important;
+}
+
+.ms-input {
+    color: #111;
+    width: 100%;
+}
+
+.ms-input .ms-input-title {
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 4px;
+    white-space: nowrap;
+}
+
+.ms-input .ms-con-input-label {
+    position: relative;
+    width: 100%;
+}
+
+.ms-combo .combo-title {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.style-label {
+    color: #111;
+}
+
+.ms-input .ms-con-input-label .ms-con-input {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.ms-input .ms-input--input.normal {
+    padding: 0 12px 0 10px;
+}
+
+.ms-input .ms-input--input {
+    font-size: 13px;
+    height: 32px;
+    color: inherit;
+    position: relative;
+    padding: 0 10px;
+    border-radius: 2px;
+    border: 1px solid #babec5;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.ms-input .ms-input-title-require {
+    color: red;
+}
+
+.ms-combo .combo-title .combo-required__text {
+    color: red;
+}
+
+.ms-combo .combo-title .combo-title__text {
+    font-size: 12px;
+    font-weight: 700;
+    color: #111;
+    padding-bottom: 4px;
+}
+
+.ms-combo .combo-main-con {
+    display: flex;
+    min-height: 32px;
+    border: 1px solid #babec5;
+    border-radius: 2px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.combo-main-con .selected-options {
+    width: 100%;
+    border: none;
+}
+
+.ms-date-picker-container {
+    position: relative;
+}
+
+.ms-date-picker-container .form-date {
+    border: 1px solid #babec5;
+    width: 100%;
+    height: 32px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: flex;
+    place-items: center;
+}
+
+.ms-date-picker-container .input-date {
+    border-radius: 2px;
+    flex: 1;
+    box-sizing: border-box;
+    min-height: 0;
+    height: 100%;
+    min-width: 0;
+}
+
+.ms-date-picker-container .ms-input-title {
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 4px;
+    white-space: nowrap;
+}
+
+.ms-radio-group {
+    display: flex;
+}
+
+.ms-radio-is-vertical-false .con-ms-radio {
+    margin-right: 20px;
+}
+
+.con-ms-radio {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.ms-radio--label {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.ms-radio--input {
+    width: 18px;
+    height: 18px;
+}
+
+.ms-tabs-position-top {
+    width: auto;
+    overflow: visible;
+}
+
+.con-ms-tabs .con-ms-ul-tabs,
+.con-ms-tabs {
+    position: relative;
+}
+
+.con-ms-tabs .con-ms-ul-tabs .ms-tabs-ul {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    position: relative;
+    display: flex;
+}
+
+.tab-other .ms-tabs-ul {
+    z-index: 2;
+    align-items: flex-end;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.con-ms-tabs .con-ms-ul-tabs .ms-tabs-ul .ms-tabs-li {
+    position: relative;
+}
+
+.tab-other .ms-tabs-ul .active-item {
+    background: #cce4f9;
+    height: 32px;
+}
+
+.tab-other .ms-tabs-ul .ms-tabs-li {
+    height: 26px;
+    margin: 0 1px;
+    border: 1px solid #c9ccd2;
+    border-bottom: none;
+    border-radius: 2px 2px 0 0;
+}
+
+.con-ms-tabs .con-ms-ul-tabs .ms-tabs-ul .ms-tabs-li .ms-tabs-btn {
+    position: relative;
+    width: 100%;
+    background: 0 0;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .2s ease;
+    z-index: 0;
+    font-size: 13px;
+}
+
+.tab-other .ms-tabs-ul .ms-tabs-li .ms-tabs-btn {
+    border-radius: unset!important;
+    height: 100%;
+    margin: 0;
+    padding: 0 8px;
+    display: flex;
+    place-items: center;
+}
+
+.ms-label {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.ms-tabs-position-top .con-slot-tabs {
+    position: relative;
+    display: block;
+    overflow: visible;
+}
+
+.con-ms-tabs .border {
+    border: 1px solid #c9ccd2;
+    margin: 0 1px 1px;
+    z-index: 1;
+    margin-top: -1px;
+}
+
+.con-slot-tabs {
+    height: 194px;
+}
+
+.border {
+    border-width: 1px!important;
+}
+
+.con-ms-tabs .con-slot-tabs .ms-tabs--content {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.cls-style-tab {
+    margin: 12px 10px 0;
+}
+
+.tab-bank-account {
+    margin: 11px 8px;
+    position: relative;
+}
+
+.tab-bank-account .grid-model-control-x {
+    overflow: auto;
+    max-height: 138px;
+}
+
+.grid-model-control-x {
+    min-width: 100%;
+}
+
+.content-height-100-percent {
+    height: 100%!important;
+}
+
+.gridComponent {
+    position: relative;
+    min-width: 100%;
+}
+
+.table-scroll table {
+    margin: auto;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+.th-height {
+    padding: 0;
+    align-items: center;
+}
+
+.text-left {
+    text-align: left!important;
+}
+
+.padding-th {
+    padding: 0 20px 0 10px;
+}
+
+.th-table {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.cursor-pointer {
+    cursor: pointer!important;
+}
+
+.table-scroll thead tr:first-child th.dynamic-header {
+    z-index: 20;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.table-scroll thead tr:first-child th {
+    background: #e5e8ec;
+    top: 0;
+    z-index: 20;
+    position: relative;
+}
+
+.text-right {
+    text-align: right!important;
+}
+
+.table-scroll thead th {
+    border-left: 1px solid #c7c7c7;
+    border-bottom: 2px solid #c7c7c7;
+    font-size: 12px;
+}
+
+.table-scroll th {
+    min-height: 34px;
+    height: 34px;
+}
+
+.dis-contents {
+    display: contents;
+}
+
+.table-scroll tbody tr {
+    font-size: 13px;
+}
+
+.table-scroll tbody .select-row .td {
+    background: #e5f3ff!important;
+}
+
+.table-scroll td:first-child,
+.table-scroll th:first-child {
+    border-left: 0!important;
+}
+
+.table-scroll tr td {
+    height: 44px;
+    position: relative;
+}
+
+input {
+    outline: none;
+}
+
+.input-focus:focus {
+    border: 1px solid #2ca01c;
+}
+
+.correctMsg {
+    border: 1px solid #2ca01c !important;
+}
+
+input:not(:focus) {
+    border: 1px solid black;
+}
+
+.errorMsgEmail {
+    border: 1px solid red !important;
+}
+
+.errorMsg {
+    border: 1px solid red !important;
+}
+
+
+.input-blur {
+    border: 1px solid #c9ccd2 !important;
+}
+
+.input-focus {
+    border: 1px solid #2ca01c;
+}
+
+
+.table-scroll th,
+.table-scroll tr td {
+    background-color: #fff;
+    padding: 0 10px;
+    border-bottom: 1.2px solid #c7c7c7;
+    border-left: 1px dotted #c7c7c7;
+}
+
+.table-scroll:not(.tr-disable-editor) tbody .select-row .td .editor {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 0 6px;
+    border-radius: 2px;
+    min-height: 32px;
+    position: relative;
+}
+
+.grid-control-item {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+}
+
+.grid-control-item .btn-grid-control {
+    padding-top: 10px;
+}
+
+.btn-grid-control {
+    padding-bottom: 0!important;
+}
+
+.grid-control-item .btn-grid-control button {
+    background: #fff;
+    border: 1px solid #8d9096;
+    border-radius: 3px!important;
+    padding: 2px 20px!important;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.ms-button-size-small {
+    height: 24px;
+    padding: 3px 16px;
+}
+
+.ms-button-secondary {
+    border: 1px solid #8d9096;
+    color: #111;
+    background-color: transparent;
+}
+
+.ms-button-size-small .ms-button--text {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.ms-button .ms-button--text {
+    font-weight: 600;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    transition: all .25s ease;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.divide {
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    margin: 32px 0 20px;
+    position: relative;
+}
+
+.btn-left {
+    position: absolute;
+}
+
+.align-right {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-group-button-popup {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.px-3 {
+    padding-left: 0.75rem!important;
+    padding-right: 0.75rem!important;
+}
+
+.ms-button-secondary {
+    border: 1px solid #8d9096;
+    color: #111;
+    background-color: transparent;
+}
+
+.ms-button .ms-button--text {
+    font-weight: 600;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    transition: all .25s ease;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.ms-button-size-default {
+    height: 34px;
+    padding: 6px 16px;
+}
+
+.ms-button-radius-false {
+    border-radius: 3px;
+}
+
+.mr-12-px {
+    margin-right: 12px;
+}
+
+.ms-button-primary {
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #2ca01c;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.mt-6-px {
+    margin-top: 3px;
+}
+
+.ms-button-text {
+    font-weight: 600;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    transition: all .25s ease;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+
+/* 
+input-date */
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    width: 20px;
+    background: none;
+    height: 20px;
+    right: 0;
+    z-index: 10000;
+    cursor: pointer;
+    display: block;
+    background-color: none;
+    font-size: 16px;
+    color: #fff;
+    height: 100%;
+    background-position: -128px -307px;
+    background: url(http://localhost:8082/img/Sprites.64af8f61.2ff7618a.svg) no-repeat;
+    cursor: pointer;
+}
+
+.form-date input {
+    border: none;
+}

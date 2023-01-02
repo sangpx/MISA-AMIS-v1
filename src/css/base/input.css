@@ -1,0 +1,26 @@
+.ms-input .ms-input--input.normal {
+    padding: 0 12px 0 10px;
+}
+
+.ms-input .ms-input--input.normal {
+    padding: 0 12px 0 10px;
+    height: 32px;
+}
+
+.ms-input .ms-input--input {
+    font-size: 13px;
+    height: var(--input-height);
+    color: inherit;
+    position: relative;
+    padding: 0 10px;
+    border-radius: 2px;
+    border: 1px solid #babec5;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.ms-input-normal {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}

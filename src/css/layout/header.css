@@ -1,0 +1,278 @@
+.t-header {
+    position: relative;
+    width: calc(100% - 180px);
+    height: 48px;
+    display: flex;
+}
+
+.items-center {
+    align-items: center!important;
+}
+
+.header-icon {
+    margin: 0 10px;
+}
+
+.header-branch-name {
+    padding-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 600;
+    max-width: 600px;
+    text-overflow: ellipsis;
+    transition: all .2s ease;
+    font-size: 14px;
+    color: #111;
+}
+
+.header-current-db {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ebedf0;
+    padding: 0 12px;
+    border-radius: 40px;
+    margin-left: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.icon-header-current-db {
+    width: 8px;
+    height: 8px;
+    background-color: #4ea344;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.header-current-db-name {
+    padding-left: 7px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: all .2s ease;
+    color: #111;
+}
+
+.ms-space {
+    padding: 0;
+    margin: 0;
+    flex-grow: 1!important;
+    background: 0 0;
+}
+
+.ms-download {
+    padding-right: 10px;
+    margin-right: 15px;
+}
+
+.wrap-notify {
+    position: relative;
+    padding-top: 12px;
+    margin-top: 0;
+}
+
+.pt-0 {
+    padding-top: 0!important;
+}
+
+.header-quick-search {
+    margin-right: 20px;
+    width: 200px;
+}
+
+.ms-input .ms-con-input-label .ms-con-input {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.header-quick-search .ms-input .ms-input--input {
+    background: #fff;
+    border-radius: 3px;
+    color: #111;
+    border: 1px solid #ebedf0;
+}
+
+.ms-input .ms-input--input.hasIcon.icon-after-input {
+    padding-left: 10px;
+}
+
+.ms-input .ms-input--input.icon-after-input {
+    padding-right: 2.75rem;
+}
+
+.ms-input .ms-input--input.large,
+.ms-input .ms-input--input.normal {
+    padding: 0 12px 0 10px;
+}
+
+.header-quick-search .ms-input .ms-con-input .ms-input--icon {
+    color: #fff;
+}
+
+.ms-input .ms-input--icon.icon-after {
+    left: auto;
+    right: 12px;
+    border-right: 0;
+}
+
+.ms-input .ms-input--icon {
+    cursor: pointer;
+    position: absolute;
+    left: 5px;
+    font-size: 1.1rem;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    padding-right: 3px;
+    color: rgba(0, 0, 0, .4);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    top: 6px;
+}
+
+.header-menu-icon {
+    position: relative;
+    height: 48px;
+    width: 44px;
+}
+
+.expand-more-button {
+    height: 100%;
+    position: relative;
+}
+
+.dropdown-secondary {
+    padding-right: 20px;
+}
+
+.ms-dropdown {
+    display: flex;
+}
+
+.user-ava {
+    background: #e2e2e2;
+    margin-right: 6px;
+    border-radius: 15px;
+}
+
+.user-name {
+    align-items: center;
+    color: #111;
+    font-size: 14px;
+    display: flex;
+    margin-right: 8px;
+}
+
+.pr-6 {
+    padding-right: 0!important;
+}
+
+.display-user {
+    white-space: nowrap;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #111;
+}
+
+.ms-download-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 27px;
+    color: #a3a2a281;
+}
+
+.t-header .hv-1:hover::after {
+    position: absolute;
+    content: "Tính năng mở rộng";
+    z-index: 10;
+    color: #111;
+    border-radius: 2px;
+    min-width: max-content;
+    display: flex;
+    padding: 5px;
+    background-color: #babec5;
+}
+
+.t-header .hv-2:hover::after {
+    position: absolute;
+    content: "Thiết lập";
+    z-index: 10;
+    color: #111;
+    border-radius: 2px;
+    min-width: max-content;
+    display: flex;
+    padding: 5px;
+    background-color: #babec5;
+}
+
+.t-header .hv-3:hover::after {
+    position: absolute;
+    content: "Trao đổi giữa DN và KTDV";
+    z-index: 10;
+    color: #111;
+    border-radius: 2px;
+    min-width: max-content;
+    display: flex;
+    padding: 5px;
+    background-color: #babec5;
+}
+
+.t-header .hv-4:hover::after {
+    position: absolute;
+    content: "Giúp";
+    z-index: 10;
+    color: #111;
+    border-radius: 2px;
+    min-width: max-content;
+    display: flex;
+    padding: 5px;
+    background-color: #babec5;
+}
+
+.t-header .hv-5:hover::after {
+    position: absolute;
+    content: "Danh sách danh mục,chứng từ đồng bộ lỗi";
+    z-index: 10;
+    color: #111;
+    border-radius: 2px;
+    min-width: max-content;
+    display: flex;
+    padding: 5px;
+    background-color: #babec5;
+}
+
+.t-header .hv-6:hover::after {
+    position: absolute;
+    content: "Thông báo";
+    z-index: 10;
+    color: #111;
+    border-radius: 2px;
+    min-width: max-content;
+    display: flex;
+    padding: 5px;
+    background-color: #babec5;
+}
+
+.input-focus:focus {
+    border: 1px solid #2ca01c !important;
+}
+
+.t-header .hv-0:hover::after {
+    position: absolute;
+    content: "Tải tệp Excel";
+    z-index: 10;
+    color: #111;
+    border-radius: 2px;
+    min-width: max-content;
+    display: flex;
+    padding: 5px;
+    background-color: #babec5;
+}

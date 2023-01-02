@@ -1,0 +1,17 @@
+.ms-checkbox {
+    top: 0;
+    left: 0;
+    transition: all .2s ease;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #afafaf;
+    background: #fff;
+}

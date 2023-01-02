@@ -1,0 +1,447 @@
+.m-dialog-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.233);
+}
+
+input[type=text]:focus {
+    border: 1px solid #2ca01c;
+}
+
+.m-dialog-show {
+    display: block !important;
+}
+
+.m-dialog-box .m-dialog {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.397);
+    width: 900px;
+    max-width: 900px;
+    min-width: 900px;
+    height: auto;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.m-dialog-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.m-dialog-header-content {
+    width: 100%;
+    padding: 20px 32px;
+    padding-right: 12px;
+}
+
+.m-dialog-header-title {
+    font-size: 24px;
+    color: #111;
+    font-weight: 700;
+}
+
+.m-diglog-header-checkbox {
+    justify-content: flex-start;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.px-6 {
+    padding-left: 1.5rem!important;
+    padding-right: 1.5rem!important;
+}
+
+.m-dialog-header-icon {
+    display: flex;
+    padding: 12px;
+}
+
+.mr-6-px {
+    margin-right: 6px;
+}
+
+.con-slot-label {
+    white-space: nowrap;
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+.ms-checkbox--input {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    z-index: 200;
+    cursor: pointer;
+}
+
+.m-dialog-content {
+    padding: 0 32px 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.employee-scroll {
+    overflow: auto;
+}
+
+.pd-b-12 {
+    padding-bottom: 12px;
+}
+
+.p-r-26 {
+    padding-right: 26px;
+}
+
+.w-1\/2 {
+    width: 50%!important;
+}
+
+.row-input {
+    padding-bottom: 12px;
+}
+
+.p-r-6 {
+    padding-right: 6px;
+}
+
+.w-2\/5 {
+    width: 40%!important;
+}
+
+.ms-input {
+    color: #111;
+    width: 100%;
+}
+
+.ms-input .ms-input-title {
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: var(--control-label-bottom-space);
+    white-space: nowrap;
+}
+
+.ms-input .ms-input-title-require {
+    color: red;
+}
+
+.ms-input .ms-con-input-label {
+    position: relative;
+    width: 100%;
+}
+
+.style-label {
+    color: #111;
+}
+
+.ms-input .ms-con-input-label .ms-con-input {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.w-full {
+    width: 100%!important;
+}
+
+.ms-combo .combo-title .combo-title__text {
+    font-size: 12px;
+    font-weight: 700;
+    color: #111;
+    padding-bottom: var(--control-label-bottom-space);
+}
+
+.ms-combo .combo-title .combo-required__text {
+    color: red;
+}
+
+.ms-combo .combo-main-con {
+    display: flex;
+    min-height: var(--input-height);
+    border: 1px solid #babec5;
+    border-radius: 2px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.ms-combo .combo-main-con .selected-options {
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: calc(100% - 32px);
+    align-items: center;
+    padding: 0 0 0 10px;
+}
+
+.custom-select #cbxDepartment {
+    width: 100%;
+    border: none;
+    height: 32px;
+}
+
+.ms-combo .combo-main-con .selected-options .combo-input {
+    border: none;
+    font-size: 13px;
+    padding-right: unset;
+    text-overflow: ellipsis;
+    background-color: transparent;
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    height: 32px;
+}
+
+.ms-combo .combo-main-con .combo-actions {
+    display: flex;
+}
+
+.ms-combo .combo-main-con .combo-actions .btn-add,
+.ms-combo .combo-main-con .combo-actions .btn-dropdown,
+.ms-combo .combo-main-con .combo-actions .btn-quick-search {
+    width: var(--combobox-dropdown-icon-width);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ms-input-title {
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: var(--control-label-bottom-space);
+    white-space: nowrap;
+}
+
+.form-date {
+    border: 1px solid #babec5;
+    width: 100%;
+    height: var(--input-height);
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: flex;
+    place-items: center;
+}
+
+.w-3\/5 {
+    width: 60% !important;
+}
+
+.p-t-5 {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+}
+
+.con-ms-radio {
+    margin-right: 20px;
+}
+
+.ms-radio {
+    position: relative;
+}
+
+.ms-radio {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ms-radio-border {
+    width: 18px px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #afafaf;
+    background: #fff;
+    z-index: 1;
+    justify-content: center;
+    display: block;
+}
+
+.con-ms-radio {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.ms-radio--label {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.label-input {
+    padding-bottom: 5px;
+}
+
+.ms-tabs-position-top {
+    width: auto;
+    overflow: visible;
+}
+
+.con-ms-tabs {
+    position: relative;
+}
+
+.con-ms-tabs .con-ms-ul-tabs {
+    position: relative;
+}
+
+.con-ms-tabs .con-ms-ul-tabs .ms-tabs-ul {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    position: relative;
+    display: flex;
+}
+
+.tab-other .ms-tabs-ul {
+    z-index: 2;
+    align-items: flex-end;
+}
+
+.tab-other .ms-tabs-ul .active-item {
+    background: #cce4f9;
+    height: 32px;
+}
+
+.con-ms-tabs .con-ms-ul-tabs .ms-tabs-ul .ms-tabs-li .ms-tabs-btn {
+    position: relative;
+    width: 100%;
+    background: 0 0;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .2s ease;
+    z-index: 0;
+    font-size: 13px;
+}
+
+.tab-other .ms-tabs-ul .ms-tabs-li .ms-tabs-btn {
+    border-radius: unset!important;
+    height: 100%;
+    margin: 0;
+    padding: 0 8px;
+    display: flex;
+    place-items: center;
+}
+
+.tab-other .ms-tabs-ul .ms-tabs-li {
+    height: 26px;
+    margin: 0 1px;
+    border: 1px solid #c9ccd2;
+    border-bottom: none;
+    border-radius: 2px 2px 0 0;
+}
+
+.con-ms-tabs .border {
+    border: 1px solid #c9ccd2;
+    margin: 0 1px 1px;
+    z-index: 1;
+    margin-top: -1px;
+}
+
+.con-slot-tabs {
+    height: 194px;
+}
+
+.border {
+    border-width: 1px!important;
+}
+
+.cls-style-tab {
+    margin: 12px 10px 0;
+}
+
+.w-1\/4 {
+    width: 25%!important;
+}
+
+.divide {
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    margin: 32px 0 20px;
+    position: relative;
+}
+
+.ms-button-secondary {
+    border: 1px solid #8d9096;
+    color: #111;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.ms-button-size-default {
+    height: 34px;
+    padding: 6px 16px;
+}
+
+.ms-button-radius-false {
+    border-radius: 3px;
+}
+
+.ms-button-primary {
+    font-weight: 600;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #2ca01c;
+}
+
+.input-date {
+    border-radius: 2px;
+    flex: 1;
+    min-height: 0;
+    height: 100%;
+    min-width: 0;
+    border: none;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 13px;
+    padding-right: 0;
+}
+
+#btnAddandSave {
+    cursor: pointer;
+}
+
+[notvalid] {
+    border: 1px solid red;
+}
+
+.form-date {
+    border: 1px solid #babec5;
+    width: 100%;
+    height: 32px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: flex;
+    place-items: center;
+}
+
+.test1 {
+    border: 1px solid red;
+}
+
+.m-input-radio {
+    width: 18px;
+    height: 18px;
+}
